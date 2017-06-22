@@ -7,9 +7,10 @@
                     id="content"
                     class="form-control"
                     name="content"
-                    ngModel
+                    [ngModel]="message?.content"
                     required>
         </div>
+        <button type="button" class="btn btn-danger" (click)="onClear(f)">Clear</button>
         <button class="btn btn-primary" type="submit">Save</button>
     </form>
 </div>
